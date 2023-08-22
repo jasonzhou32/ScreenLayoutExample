@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ScreenLayoutEx 1</string>
+    <string name="name_input">Name</string>
+    <string name="age_input">Age</string>
+    <string name="hobby_input">Hobby</string>
+    <string name="continue_button">Continue</string>
+
+</resources>
