@@ -10,11 +10,11 @@
         android:id="@+id/editName"
         android:layout_width="247dp"
         android:layout_height="78dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="24dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/name_input"
+        android:hint="Name"
         app:layout_constraintBottom_toTopOf="@+id/editAge"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -23,10 +23,10 @@
         android:layout_width="245dp"
         android:layout_height="72dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="@string/age_input"
+        android:hint="Age"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/editHobby"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -34,11 +34,11 @@
         android:id="@+id/editHobby"
         android:layout_width="244dp"
         android:layout_height="71dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="84dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="80dp"
         android:ems="10"
+        android:hint="Hobby"
         android:inputType="text"
-        android:text="@string/hobby_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,11 +46,22 @@
         android:id="@+id/continueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="152dp"
         android:backgroundTint="@color/tomatoRed"
         android:text="@string/continue_button"
+        android:onClick="switchScreens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editHobby" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="257dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
