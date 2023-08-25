@@ -26,5 +26,7 @@ public class ShowInfoActivity extends AppCompatActivity {
 
         TextView infoTV = findViewById(R.id.infoTextView);
         infoTV.setText(received);
+
+
     }
 }
