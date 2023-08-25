@@ -38,14 +38,21 @@ public class MainActivity extends AppCompatActivity {
         // log statements allow us to print to the console for debugging
         Log.i("jason", name + " " + age + " " + hobby);
         String fullText = name + " " + age + "\n" + hobby;
+        String nameText = name;
+        String ageText = age;
+        String hobbyText = hobby;
 
         // create the intent and tell it where to go
         Intent intent = new Intent(this, ShowInfoActivity.class);
 
+
         // fill the intent (optional)
         // need to use a label so the receiver knows what data goes with each item
         // in the intent
-        intent.putExtra("FULLTEXT", fullText);
+//        intent.putExtra("FULLTEXT", fullText);
+        intent.putExtra("NAME", nameText);
+        intent.putExtra("AGE", ageText);
+        intent.putExtra("HOBBY", hobbyText);
 
         // call startActivity to launch the intent
         startActivity(intent);
